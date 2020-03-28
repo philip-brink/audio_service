@@ -283,8 +283,9 @@ class AudioPlayerTask extends BackgroundAudioTask {
       title: "A Salute To Head-Scratching Science",
       artist: "Science Friday and WNYC Studios",
       duration: 5739820,
-      artUri:
-          "https://media.wnyc.org/i/1400/1400/l/80/1/ScienceFriday_WNYCStudios_1400.jpg",
+// ----------------------------------------------------- Re-enable to get seek bar back
+//      artUri:
+//          "https://media.wnyc.org/i/1400/1400/l/80/1/ScienceFriday_WNYCStudios_1400.jpg",
     ),
     MediaItem(
       id: "https://s3.amazonaws.com/scifri-segments/scifri201711241.mp3",
@@ -292,8 +293,9 @@ class AudioPlayerTask extends BackgroundAudioTask {
       title: "From Cat Rheology To Operatic Incompetence",
       artist: "Science Friday and WNYC Studios",
       duration: 2856950,
-      artUri:
-          "https://media.wnyc.org/i/1400/1400/l/80/1/ScienceFriday_WNYCStudios_1400.jpg",
+// ----------------------------------------------------- Re-enable to get seek bar back
+//      artUri:
+//          "https://media.wnyc.org/i/1400/1400/l/80/1/ScienceFriday_WNYCStudios_1400.jpg",
     ),
   ];
   int _queueIndex = -1;
@@ -451,14 +453,16 @@ class AudioPlayerTask extends BackgroundAudioTask {
         skipToPreviousControl,
         pauseControl,
         stopControl,
-        skipToNextControl
+// ----------------------------------------------------- Re-enable to get seek bar back
+//        skipToNextControl
       ];
     } else {
       return [
         skipToPreviousControl,
         playControl,
         stopControl,
-        skipToNextControl
+// ----------------------------------------------------- Re-enable to get seek bar back
+//        skipToNextControl
       ];
     }
   }
